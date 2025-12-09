@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Biryani Express</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
       --bg: #234c3b;
@@ -13,23 +12,19 @@
       --accent: #c9a961;
       --box: #c9a961;
     }
-    body.dark-mode {
-      --bg: #111;
-      --text: #eee;
-      --accent: #f9d15a;
-      --box: #333;
-    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: 'Cormorant Garamond', serif;
       background: var(--bg);
       color: var(--text);
-      transition: all 0.3s ease;
     }
+
     header {
       background: #153628;
       padding: 0.5rem 2rem;
@@ -40,35 +35,34 @@
       top: 0;
       z-index: 1000;
     }
-    .header-logo img {
-      height: 40px;
+
+    .logo-img {
+      height: 70px;
+      width: auto;
     }
+
     nav a {
       margin-left: 2rem;
       text-decoration: none;
       color: var(--accent);
-      font-size: 1.1rem;
       font-family: 'Cinzel', serif;
-    }
-    .dark-toggle {
-      cursor: pointer;
-      margin-left: 2rem;
       font-size: 1.2rem;
-      color: var(--accent);
     }
 
     .hero {
       text-align: center;
       padding: 2rem 1rem 1rem;
     }
+
     .hero h1 {
       font-family: 'Cinzel', serif;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
       color: var(--accent);
     }
+
     .hero p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     h2.section-title {
@@ -125,38 +119,9 @@
       transform: scale(1.2);
     }
 
-    .contact-section {
-      padding: 2rem;
-      background: #1a3e2e;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-
-    .contact-card {
-      background: var(--box);
-      padding: 1.5rem;
-      border-radius: 10px;
-      text-align: center;
-      width: 250px;
-      color: #1a3e2e;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-
-    .contact-card h3 {
-      font-family: 'Cinzel', serif;
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem;
       background: #153628;
       color: var(--text);
       font-size: 0.9rem;
@@ -172,18 +137,11 @@
 <body>
 
 <header>
-  <div class="header-logo">
-    <img src="logo.png" alt="Biryani Express Logo">
-  </div>
-  <div>
-    <nav>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <span class="dark-toggle" onclick="toggleDark()">
-      <i class="fas fa-moon"></i>
-    </span>
-  </div>
+  <img src="logo.png" alt="Biryani Express Logo" class="logo-img">
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -251,33 +209,9 @@
   <i class="fas fa-utensils" title="SkipTheDishes"></i>
 </div>
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Visit Us</h2>
-  <div class="contact-info">
-    <div class="contact-card">
-      <h3>Hours</h3>
-      <p>Mon–Sun<br>11:00 AM – 11:00 PM</p>
-    </div>
-    <div class="contact-card">
-      <h3>Location</h3>
-      <p>123 Brampton,<br>Ontario, Canada</p>
-    </div>
-    <div class="contact-card">
-      <h3>Contact</h3>
-      <p>+1 401 234 5678<br>info@biryaniexpress.com</p>
-    </div>
-  </div>
-</section>
-
-<footer>
+<footer id="contact">
   <p>&copy; 2025 Biryani Express. Authentic Hyderabadi Cuisine.</p>
 </footer>
-
-<script>
-  function toggleDark() {
-    document.body.classList.toggle('dark-mode');
-  }
-</script>
 
 </body>
 </html>
