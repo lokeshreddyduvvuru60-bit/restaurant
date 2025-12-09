@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biryani Express</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg: #234c3b;
+      --text: #f5f1e8;
+      --accent: #c9a961;
+      --box: #c9a961;
+    }
+    body.dark-mode {
+      --bg: #111;
+      --text: #eee;
+      --accent: #f9d15a;
+      --box: #333;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
+    header {
+      background: #153628;
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-logo img {
+      height: 40px;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-family: 'Cinzel', serif;
+    }
+    .dark-toggle {
+      cursor: pointer;
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    h2.section-title {
+      font-family: 'Cinzel', serif;
+      color: var(--accent);
+      text-align: center;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 2.2rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 0 2rem 2rem;
+    }
+
+    .menu-box {
+      background: var(--box);
+      color: #1a3e2e;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .menu-box h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-family: 'Cinzel', serif;
+    }
+
+    .menu-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.3rem 0;
+      font-size: 1.1rem;
+    }
+
+    .delivery-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .delivery-icons i {
+      font-size: 2rem;
+      color: var(--accent);
+      transition: transform 0.2s;
+    }
+
+    .delivery-icons i:hover {
+      transform: scale(1.2);
+    }
+
+    .contact-section {
+      padding: 2rem;
+      background: #1a3e2e;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-card {
+      background: var(--box);
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      color: #1a3e2e;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .contact-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #153628;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-logo">
+    <img src="logo.png" alt="Biryani Express Logo">
+  </div>
+  <div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <span class="dark-toggle" onclick="toggleDark()">
+      <i class="fas fa-moon"></i>
+    </span>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Biryani Express</h1>
+  <p>Experience the Rich Flavors of Hyderabad</p>
+</section>
+
+<h2 class="section-title" id="menu">Our Menu</h2>
+<div class="menu-grid">
+
+  <div class="menu-box">
+    <h3>VEG BIRYANI</h3>
+    <div class="menu-row"><span>Paneer Biryani</span><span>17.99</span></div>
+    <div class="menu-row"><span>Kaju Mushroom</span><span>17.99</span></div>
+    <div class="menu-row"><span>Ghee Roast Paneer</span><span>17.99</span></div>
+    <div class="menu-row"><span>Shahi Paneer</span><span>17.99</span></div>
+    <div class="menu-row"><span>Peri-Peri Tikka</span><span>18.99</span></div>
+  </div>
+
+  <div class="menu-box">
+    <h3>CHICKEN BIRYANI</h3>
+    <div class="menu-row"><span>Dum Biryani</span><span>16.99</span></div>
+    <div class="menu-row"><span>Chicken 65</span><span>18.99</span></div>
+    <div class="menu-row"><span>Fry Biryani</span><span>18.99</span></div>
+    <div class="menu-row"><span>Boneless Biryani</span><span>18.99</span></div>
+    <div class="menu-row"><span>Bucket Special</span><span>20.99</span></div>
+  </div>
+
+  <div class="menu-box">
+    <h3>MUTTON BIRYANI</h3>
+    <div class="menu-row"><span>Mutton Dum</span><span>19.99</span></div>
+    <div class="menu-row"><span>Mutton Fry</span><span>21.99</span></div>
+    <div class="menu-row"><span>Boneless Mutton</span><span>22.99</span></div>
+    <div class="menu-row"><span>Bucket Mutton</span><span>25.99</span></div>
+  </div>
+
+  <div class="menu-box">
+    <h3>VEG APPETIZERS</h3>
+    <div class="menu-row"><span>Paneer Tikka</span><span>12.99</span></div>
+    <div class="menu-row"><span>Veg Spring Roll</span><span>10.99</span></div>
+    <div class="menu-row"><span>Chilly Mushroom</span><span>11.99</span></div>
+  </div>
+
+  <div class="menu-box">
+    <h3>NON-VEG APPETIZERS</h3>
+    <div class="menu-row"><span>Chicken Lollipop</span><span>13.99</span></div>
+    <div class="menu-row"><span>Fish Fingers</span><span>14.99</span></div>
+    <div class="menu-row"><span>Prawns 65</span><span>15.99</span></div>
+  </div>
+
+  <div class="menu-box">
+    <h3>DRINKS</h3>
+    <div class="menu-row"><span>Mango Lassi</span><span>4.99</span></div>
+    <div class="menu-row"><span>Sweet Lassi</span><span>4.49</span></div>
+    <div class="menu-row"><span>Salt Lassi</span><span>4.49</span></div>
+    <div class="menu-row"><span>Masala Chai</span><span>2.99</span></div>
+  </div>
+
+</div>
+
+<h2 class="section-title">Delivery Available On</h2>
+<div class="delivery-icons">
+  <i class="fas fa-motorcycle" title="Uber Eats"></i>
+  <i class="fas fa-truck" title="DoorDash"></i>
+  <i class="fas fa-utensils" title="SkipTheDishes"></i>
+</div>
+
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Visit Us</h2>
+  <div class="contact-info">
+    <div class="contact-card">
+      <h3>Hours</h3>
+      <p>Mon–Sun<br>11:00 AM – 11:00 PM</p>
+    </div>
+    <div class="contact-card">
+      <h3>Location</h3>
+      <p>123 Brampton,<br>Ontario, Canada</p>
+    </div>
+    <div class="contact-card">
+      <h3>Contact</h3>
+      <p>+1 401 234 5678<br>info@biryaniexpress.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Biryani Express. Authentic Hyderabadi Cuisine.</p>
+</footer>
+
+<script>
+  function toggleDark() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
