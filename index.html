@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biryani Express</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #234c3b;
+      --text: #f5f1e8;
+      --accent: #c9a961;
+      --box: #c9a961;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+    }
+
+    header {
+      background: #153628;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-family: 'Cinzel', serif;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      color: var(--accent);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    h2.section-title {
+      font-family: 'Cinzel', serif;
+      color: var(--accent);
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 2rem;
+    }
+
+    .menu-category {
+      padding: 1rem 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background: var(--box);
+      color: #1a3e2e;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border: 1px solid #1a3e2e;
+      text-align: left;
+    }
+
+    th {
+      background-color: #b89b5d;
+      font-family: 'Cinzel', serif;
+    }
+
+    .delivery-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .delivery-icons i {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    footer {
+      background: #153628;
+      padding: 2rem;
+      color: var(--text);
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-card {
+      background: var(--box);
+      color: #1a3e2e;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Biryani Express Logo">
+  </div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to Biryani Express</h1>
+  <p>Experience the Rich Flavors of Hyderabad</p>
+</section>
+
+<h2 class="section-title" id="menu">Our Menu</h2>
+
+<!-- MENU SECTIONS -->
+<div class="menu-category">
+  <h2 class="section-title">Veg Starters</h2>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Regular</th>
+      <th>Family Pack</th>
+      <th>Small</th>
+      <th>Medium</th>
+      <th>Large</th>
+    </tr>
+    <tr><td>Gobi Manchurian</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Baby Corn Manchurian</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Paneer Manchurian</td><td>12</td><td>26</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Mushroom Manchurian</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Veg Manchurian</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Chilli Baby Corn</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Chilli Gobi</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Chilli Paneer</td><td>12</td><td>26</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Chilli Mushroom</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Gobi 65 Hyderabadi</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Paneer 65 Hyderabadi</td><td>12</td><td>26</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Dragon Paneer</td><td>12</td><td>26</td><td>45</td><td>75</td><td>110</td></tr>
+    <tr><td>Dragon Gobi</td><td>11</td><td>25</td><td>45</td><td>75</td><td>110</td></tr>
+  </table>
+</div>
+
+<div class="menu-category">
+  <h2 class="section-title">Non-Veg Starters</h2>
+  <table>
+    <tr>
+      <th>Item</th><th>Regular</th><th>Family Pack</th><th>Small</th><th>Medium</th><th>Large</th>
+    </tr>
+    <tr><td>Chicken Lollipops</td><td>13</td><td>28</td><td>55</td><td>85</td><td>120</td></tr>
+    <tr><td>Chicken 65</td><td>13</td><td>28</td><td>55</td><td>85</td><td>120</td></tr>
+    <tr><td>Dragon Chicken</td><td>13</td><td>28</td><td>55</td><td>85</td><td>120</td></tr>
+    <tr><td>Apollo Fish</td><td>13</td><td>28</td><td>55</td><td>85</td><td>120</td></tr>
+    <tr><td>Fish 65</td><td>13</td><td>28</td><td>55</td><td>85</td><td>120</td></tr>
+  </table>
+</div>
+
+<div class="menu-category">
+  <h2 class="section-title">Drinks</h2>
+  <table>
+    <tr><th>Drink</th><th>Price</th></tr>
+    <tr><td>Mango Lassi</td><td>4.99</td></tr>
+    <tr><td>Sweet Lassi</td><td>4.49</td></tr>
+    <tr><td>Salt Lassi</td><td>4.49</td></tr>
+    <tr><td>Masala Chai</td><td>2.99</td></tr>
+    <tr><td>Soda / Coke / Sprite</td><td>2.00</td></tr>
+  </table>
+</div>
+
+<!-- DELIVERY SECTION -->
+<h2 class="section-title">Delivery Available On</h2>
+<div class="delivery-icons">
+  <i class="fas fa-motorcycle" title="Uber Eats"></i>
+  <i class="fas fa-truck" title="DoorDash"></i>
+  <i class="fas fa-utensils" title="SkipTheDishes"></i>
+</div>
+
+<!-- FOOTER CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Visit Us</h2>
+  <div class="contact-info">
+    <div class="contact-card">
+      <h3>Hours</h3>
+      <p>Mon–Sun 11:00 AM – 11:00 PM</p>
+    </div>
+    <div class="contact-card">
+      <h3>Location</h3>
+      <p>123 Brampton, ON</p>
+    </div>
+    <div class="contact-card">
+      <h3>Contact</h3>
+      <p>+1 401 234 5678</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Biryani Express. Authentic Hyderabadi Cuisine.</p>
+</footer>
+
+</body>
+</html>
