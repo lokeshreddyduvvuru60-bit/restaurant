@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nizams Biryani House</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
   <style>
     :root {
       --bg: #153628;
@@ -43,7 +45,11 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(21, 54, 40, 0.85));
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(21, 54, 40, 0.85)
+      );
       z-index: -1;
     }
 
@@ -53,21 +59,23 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background: transparent; /* removed green overlay */
+      background: transparent;
     }
 
     .logo img {
       height: 75px;
     }
 
+    /* ORDER BUTTON (ANCHOR STYLE) */
     .btn-order {
       background: var(--accent);
       color: var(--bg);
       padding: 0.6rem 1.2rem;
-      border: none;
       border-radius: 5px;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
 
     /* HERO */
@@ -84,7 +92,6 @@
 
     .hero-text {
       max-width: 600px;
-      z-index: 1;
     }
 
     .hero-text h1 {
@@ -114,43 +121,6 @@
       cursor: pointer;
     }
 
-    /* IMAGE (NO BORDER/NO SHADOW) */
-    .hero-image img {
-      width: 400px;
-      max-width: 100%;
-      border-radius: 1rem;
-      border: none;       /* removed border */
-      box-shadow: none;   /* removed shadow */
-    }
-
-    /* EXPLORE SECTION */
-    .section {
-      padding: 3rem 2rem;
-      text-align: center;
-      background: rgba(21, 54, 40, 0.9);
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      color: var(--accent);
-      margin-bottom: 2rem;
-      font-family: 'Cinzel', serif;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .image-grid img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-    }
-
     /* FOOTER */
     footer {
       background: rgba(14, 36, 26, 0.95);
@@ -174,9 +144,7 @@
         flex-direction: column;
         text-align: center;
       }
-      .hero-image {
-        margin-top: 2rem;
-      }
+
       .hero-buttons {
         flex-direction: column;
       }
@@ -188,10 +156,8 @@
   <!-- 🎥 Background Video -->
   <video autoplay muted loop playsinline class="bg-video">
     <source src="bg.mp4" type="video/mp4" />
-    Your browser does not support HTML5 video.
   </video>
 
-  <!-- 🔲 Dark Overlay -->
   <div class="video-overlay"></div>
 
   <!-- HEADER -->
@@ -199,25 +165,52 @@
     <div class="logo">
       <img src="logo.png" alt="Nizams Logo" />
     </div>
-    <button class="btn-order">ORDER ONLINE</button>
+
+    <a
+      class="btn-order"
+      href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ?srsltid=AfmBOoqYMaYzBOSW0hSQGJzP5D4JQqbaN7MDEwtZaKHPdpG51Z982FMY"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ORDER ONLINE
+    </a>
   </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <p>WELCOME TO</p>
-    <h1>Nizam’s Biryani House</h1>
-    <p>Feast Like Royalty – Experience the Rich Flavors of Hyderabad</p>
-    <div class="hero-buttons">
-      <button class="btn-order">ORDER ONLINE</button>
-      <button class="btn-outline" onclick="window.location.href='menu.html'">VIEW MENU</button>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p>WELCOME TO</p>
+      <h1>Nizam’s Biryani House</h1>
+      <p>Feast Like Royalty – Experience the Rich Flavors of Hyderabad</p>
+
+      <div class="hero-buttons">
+        <a
+          class="btn-order"
+          href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ?srsltid=AfmBOoqYMaYzBOSW0hSQGJzP5D4JQqbaN7MDEwtZaKHPdpG51Z982FMY"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ORDER ONLINE
+        </a>
+
+        <button
+          class="btn-outline"
+          onclick="window.location.href='menu.html'"
+        >
+          VIEW MENU
+        </button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <button class="menu-footer-button" onclick="window.location.href='menu.html'">MENU</button>
+    <button
+      class="menu-footer-button"
+      onclick="window.location.href='menu.html'"
+    >
+      MENU
+    </button>
   </footer>
 
 </body>
