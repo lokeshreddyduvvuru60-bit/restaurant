@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nizams Biryani House</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Elegant Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
   <style>
     :root {
       --bg: #153628;
@@ -43,20 +46,28 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(21, 54, 40, 0.85));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(21, 54, 40, 0.85));
       z-index: -1;
     }
 
+    /* HEADER */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background: rgba(21, 54, 40, 0.85);
+      background: transparent;
+    }
+
+    .logo-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      color: var(--accent);
     }
 
     .logo img {
       height: 60px;
+      margin-right: 0.5rem;
     }
 
     .btn-order {
@@ -67,8 +78,10 @@
       border-radius: 5px;
       font-weight: 600;
       cursor: pointer;
+      font-family: 'Poppins', sans-serif;
     }
 
+    /* HERO */
     .hero {
       display: flex;
       align-items: center;
@@ -76,6 +89,8 @@
       padding: 5rem 2rem;
       flex-wrap: wrap;
       min-height: 80vh;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-text {
@@ -84,14 +99,16 @@
     }
 
     .hero-text h1 {
-      font-size: 3rem;
-      font-family: 'Cinzel', serif;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.2rem;
       color: var(--accent);
+      margin-bottom: 0.5rem;
     }
 
     .hero-text p {
       font-size: 1.2rem;
       margin: 1rem 0 2rem;
+      font-family: 'Poppins', sans-serif;
     }
 
     .hero-buttons {
@@ -108,15 +125,19 @@
       border-radius: 5px;
       font-weight: 600;
       cursor: pointer;
+      font-family: 'Poppins', sans-serif;
     }
 
+    /* IMAGE (NO BORDER/NO SHADOW) */
     .hero-image img {
-      width: 400px;
+      width: 420px;
       max-width: 100%;
       border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      border: none;
+      box-shadow: none;
     }
 
+    /* EXPLORE SECTION */
     .section {
       padding: 3rem 2rem;
       text-align: center;
@@ -124,10 +145,10 @@
     }
 
     .section h2 {
+      font-family: 'Cormorant Garamond', serif;
       font-size: 2rem;
       color: var(--accent);
       margin-bottom: 2rem;
-      font-family: 'Cinzel', serif;
     }
 
     .image-grid {
@@ -144,6 +165,7 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.3);
     }
 
+    /* FOOTER */
     footer {
       background: rgba(14, 36, 26, 0.95);
       text-align: center;
@@ -181,20 +203,23 @@
 
   <!-- 🎥 Background Video -->
   <video autoplay muted loop playsinline class="bg-video">
-    <source src="bg.mp4" type="video/mp4" />
+    <source src="bg.mp4" type="video/mp4"/>
     Your browser does not support HTML5 video.
   </video>
 
-  <!-- 🔲 Dark Overlay on top of video -->
+  <!-- 🔲 Dark Overlay -->
   <div class="video-overlay"></div>
 
+  <!-- HEADER -->
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Nizams Logo" />
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="Nizams Logo"/>
+      <span class="logo-title">Nizams Biryani House</span>
     </div>
     <button class="btn-order">ORDER ONLINE</button>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
       <p>WELCOME TO</p>
@@ -206,20 +231,22 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="biryani.png" alt="Delicious Biryani" />
+      <img src="biryani.png" alt="Delicious Biryani"/>
     </div>
   </section>
 
+  <!-- EXPLORE IMAGES -->
   <section class="section">
     <h2>Explore Our Dishes</h2>
     <div class="image-grid">
-      <img src="breakfast.jpg" alt="Indian Breakfast" />
-      <img src="biryanis.jpg" alt="Biryanis" />
-      <img src="curries.jpg" alt="Curries" />
-      <img src="tandoori.jpg" alt="Tandoori & Breads" />
+      <img src="breakfast.jpg" alt="Indian Breakfast"/>
+      <img src="biryanis.jpg" alt="Biryanis"/>
+      <img src="curries.jpg" alt="Curries"/>
+      <img src="tandoori.jpg" alt="Tandoori & Breads"/>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <button class="menu-footer-button" onclick="window.location.href='menu.html'">MENU</button>
   </footer>
