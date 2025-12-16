@@ -6,7 +6,7 @@
   <title>Nizams Biryani House</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
 
   <style>
     :root {
@@ -39,17 +39,14 @@
       background: rgba(21, 54, 40, 0.6);
       z-index: 10;
     }
-
     .nav-left {
       display: flex;
       align-items: center;
       gap: 2rem;
     }
-
     .nav-left img {
       height: 55px;
     }
-
     nav a {
       color: var(--text);
       text-decoration: none;
@@ -58,11 +55,9 @@
       padding: 0.5rem 1rem;
       transition: 0.3s;
     }
-
     nav a:hover {
       color: var(--accent);
     }
-
     .order-btn-top {
       background: var(--accent);
       color: var(--bg);
@@ -73,7 +68,7 @@
       font-size: 1rem;
     }
 
-    /* Background Video Crossfade */
+    /* Video Background Crossfade */
     .video-wrapper {
       position: fixed;
       top: 0;
@@ -101,11 +96,11 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(180deg, rgba(21,54,40,0.7), rgba(21,54,40,0.8));
+      background: linear-gradient(180deg, rgba(21,54,40,0.7), rgba(21,54,40,0.85));
       z-index: -1;
     }
 
-    /* Hero Center Text */
+    /* Hero Heading */
     .hero {
       display: flex;
       align-items: center;
@@ -117,40 +112,30 @@
       z-index: 1;
       position: relative;
     }
-
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 4rem;
+      font-size: 6rem;     /* Big like FURSAT */
+      line-height: 1;
       color: var(--accent);
-      margin-bottom: 0.8rem;
-      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-
     .hero .sub {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: var(--text);
-      margin-bottom: 2rem;
-    }
-
-    .hero .btn-group a {
-      background: var(--accent);
-      color: var(--bg);
-      padding: 0.8rem 2rem;
-      border-radius: 25px;
-      margin: 0 0.5rem;
-      font-size: 1.1rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
       font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .hero .btn-group a:hover {
-      background: #c5a43a;
+      color: var(--text);
+      letter-spacing: 3px;
     }
 
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2.8rem; }
-      .hero .sub { font-size: 1.2rem; }
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+      .hero .sub {
+        font-size: 1.5rem;
+      }
       header { padding: 1rem; }
     }
   </style>
@@ -189,27 +174,15 @@
   <section class="hero" id="home">
     <h1>Nizam’s Biryani House</h1>
     <div class="sub">Kitchen • Café</div>
-
-    <div class="btn-group">
-      <a href="menu.html">View Menu</a>
-      <a
-        href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ?srsltid=AfmBOoqYMaYzBOSW0hSQGJzP5D4JQqbaN7MDEwtZaKHPdpG51Z982FMY"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Order Online
-      </a>
-    </div>
   </section>
 
-  <!-- Video Crossfade Script -->
+  <!-- Crossfade Background Script -->
   <script>
     const videos = ["bg1.mp4", "bg.mp4", "hakka.mp4"];
     let idx = 0;
     const v1 = document.getElementById("v1");
     const v2 = document.getElementById("v2");
 
-    // Start
     v1.src = videos[0];
     v1.classList.add("active");
     v1.play();
