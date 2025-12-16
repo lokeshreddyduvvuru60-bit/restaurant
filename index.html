@@ -25,15 +25,26 @@
       overflow-x: hidden;
     }
 
+    /* Background Video */
     .bg-video {
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100vw;
-      min-height: 100vh;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Dark Overlay */
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(21, 54, 40, 0.85));
       z-index: -1;
-      opacity: 0.3; /* Adjust to control brightness */
     }
 
     header {
@@ -41,7 +52,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background: rgba(21, 54, 40, 0.85); /* transparent header */
+      background: rgba(21, 54, 40, 0.85);
     }
 
     .logo img {
@@ -109,7 +120,7 @@
     .section {
       padding: 3rem 2rem;
       text-align: center;
-      background: rgba(21, 54, 40, 0.85);
+      background: rgba(21, 54, 40, 0.9);
     }
 
     .section h2 {
@@ -168,11 +179,14 @@
 </head>
 <body>
 
-  <!-- 🌄 Background Video -->
+  <!-- 🎥 Background Video -->
   <video autoplay muted loop playsinline class="bg-video">
     <source src="bg.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
+
+  <!-- 🔲 Dark Overlay on top of video -->
+  <div class="video-overlay"></div>
 
   <header>
     <div class="logo">
