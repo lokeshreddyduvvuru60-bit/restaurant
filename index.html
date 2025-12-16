@@ -53,13 +53,19 @@
       max-width: 600px;
     }
 
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
     .hero-text h1 {
       font-size: 3rem;
       font-family: 'Cinzel', serif;
       color: var(--accent);
+      line-height: 1.2;
     }
 
-    .hero-text p {
+    .hero-text p:last-of-type {
       font-size: 1.2rem;
       margin: 1rem 0 2rem;
     }
@@ -67,6 +73,7 @@
     .hero-buttons {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .btn-outline {
@@ -141,6 +148,7 @@
 
       .hero-buttons {
         flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -182,304 +190,6 @@
   <footer>
     <button class="menu-footer-button" onclick="window.location.href='menu.html'">MENU</button>
   </footer>
-
-</body>
-</html>
-
-<body>
-
-<h1>Our Menu</h1>
-
-<div class="menu-wrapper">
-
-<!-- VEG STARTERS -->
-<div class="menu-block">
-<h3>VEG STARTERS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Gobi Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Baby Corn Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Paneer Manchurian</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Mushroom Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Veg Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Baby Corn</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Gobi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Paneer</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Mushroom</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Gobi 65 Hyderabadi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Paneer 65 Hyderabadi</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Dragon Paneer</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Dragon Gobi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-</table>
-</div>
-
-<!-- NON-VEG STARTERS -->
-<div class="menu-block">
-<h3>NON‑VEG STARTERS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Chicken Lollipops (4PCS)</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken 65 Hyderabadi</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Pakoda</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Majestic</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Dragon Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Manchurian</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Schezwan Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Adraki Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Egg</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Egg Manchurian</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Apollo Fish</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Fish</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Fish 65 Hyderabadi</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Mutton</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mutton Pepper Fry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Chilli Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Prawns Chatpata</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mughlai Prawns Dry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Schezwan Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Prawn Manchurian</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Loose Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-</table>
-</div>
-
-<!-- Remaining sections CONTINUE EXACTLY as structured above -->
-<!-- VEG CURRIES | NON‑VEG CURRIES | HAKKA CHINESE | BIRYANIS | BREADS | DESSERTS | DRINKS | SIDES -->
-<!-- (All your remaining menu data fits perfectly using same structure) -->
-
-<!-- VEG STARTERS -->
-<div class="menu-block">
-<h3>VEG STARTERS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Gobi Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Baby Corn Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Paneer Manchurian</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Mushroom Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Veg Manchurian</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Baby Corn</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Gobi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Paneer</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chilli Mushroom</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Gobi 65 Hyderabadi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Paneer 65 Hyderabadi</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Dragon Paneer</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Dragon Gobi</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-</table>
-</div>
-
-
-<!-- NON-VEG STARTERS -->
-<div class="menu-block">
-<h3>NON-VEG STARTERS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Chicken Lollipops (4PCS)</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken 65 Hyderabadi</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Pakoda</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Majestic</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Dragon Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chicken Manchurian</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Schezwan Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Adraki Chicken</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Egg</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Egg Manchurian</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Apollo Fish</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Fish</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Fish 65 Hyderabadi</td><td>$13</td><td>$28</td><td>$55</td><td>$85</td><td>$120</td></tr>
-<tr><td>Chilli Mutton</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mutton Pepper Fry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Chilli Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Prawns Chatpata</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mughlai Prawns Dry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Schezwan Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Prawn Manchurian</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Loose Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-</table>
-</div>
-
-  <!-- Veg Curries -->
-<!-- VEG CURRIES -->
-<div class="menu-block">
-<h3>VEG CURRIES</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Nizam's Special Veg Curry</td><td>$11</td><td>$25</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Daal Tadka</td><td>$10</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Gongura Paneer</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Shahi Paneer Curry</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Kaju Tomato</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Kaju Mushroom Masala</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Guntur Paneer Masala</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Paneer Butter Masala</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-</table>
-</div>
-
-  <!-- NON-VEG CURRIES -->
-<div class="menu-block">
-<h3>NON-VEG CURRIES</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Telangana Chicken Curry</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Hyderabadi Laal Chicken Curry</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chicken Mughlai</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Kadai Chicken</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Gongura Chicken</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chicken Kheema</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Egg Burji</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Telangana Mutton Curry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Hyderabadi Laal Mutton Curry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Shahi Mutton Curry</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mutton Kheema</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-</table>
-</div>
-
-<!-- HAKKA CHINESE – VEG -->
-<div class="menu-block">
-<h3>HAKKA CHINESE – VEG</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Street Style Veg Soft Noodles</td><td>$10</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Schezwan Veg Noodles</td><td>$10</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Street Style Mix Veg Fried Rice</td><td>$10</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Street Style Mushroom Fried Rice</td><td>$10</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Schezwan Mix Veg Fried Rice</td><td>$10</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-</table>
-</div>
-
-<!-- HAKKA CHINESE – NON-VEG -->
-<div class="menu-block">
-<h3>HAKKA CHINESE – NON-VEG</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Chicken Street Style Soft Noodles</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Schezwan Chicken Noodles</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Tripple Egg Fried Rice</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Egg Schezwan Fried Rice</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Street Style Chicken Fried Rice</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Street Style Prawns Fried Rice</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Mixed Fried Rice – Egg/Chicken/Prawns</td><td>$14</td><td>$30</td><td>$60</td><td>$90</td><td>$125</td></tr>
-<tr><td>Chicken Schezwan Fried Rice</td><td>$12</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-</table>
-</div>
-
-<!-- VEGETARIAN BIRYANI -->
-<div class="menu-block">
-<h3>VEGETARIAN BIRYANI</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Nizam's Special Mix Veg & Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Thalpakatti Mix Veg Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Malnad Mix Veg Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Ghee Roast Kaju Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Paneer Majestic Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Kaju Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Pachimrichi Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Shahi Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Vijayawada Paneer Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Paneer 65 Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Mixed Veg Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-<tr><td>Mushroom Masala Biryani</td><td>$12</td><td>$24</td><td>$40</td><td>$70</td><td>$100</td></tr>
-</table>
-</div>
-
-<!-- NON-VEG BIRYANI -->
-<div class="menu-block">
-<h3>NON-VEG BIRYANI</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Reg</th><th>Fam</th><th>Sm</th><th>Md</th><th>Lg</th></tr>
-<tr><td>Ghee Roast Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Scrambled Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Thalpakatti Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Malnad Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Pachimrichi Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Shahi Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Vijayawada Egg Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Hyd Chicken Dum Biryani</td><td>$12</td><td>$24</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Thalpakatti Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Malnad Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Konaseema Kodi Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chicken Fry Piece Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chicken Mughlai Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Ghee Roast Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Chicken 65 Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Pachimrichi Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Shahi Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Kaju Chicken Biryani</td><td>$13</td><td>$26</td><td>$45</td><td>$75</td><td>$110</td></tr>
-<tr><td>Thalpakatti Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Malnad Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Hyd Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Mutton Kheema Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Shahi Goat Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Vijayawada Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Mutton Fry Piece Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Gongura Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Ghee Roast Mutton Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Pachimrichi Fish Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-<tr><td>Prawn Ghee Roast Biryani</td><td>$15</td><td>$30</td><td>$60</td><td>$95</td><td>$130</td></tr>
-</table>
-</div>
-
-<!-- BREADS -->
-<div class="menu-block">
-<h3>BREADS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Price</th></tr>
-<tr><td>Kerala Parotta</td><td>$2.50</td></tr>
-<tr><td>Chapati</td><td>$2.50</td></tr>
-<tr><td>Tandoori Roti</td><td>$2.50</td></tr>
-<tr><td>Plain Naan</td><td>$2.00</td></tr>
-</table>
-</div>
-
-
-<!-- DESSERT -->
-<div class="menu-block">
-<h3>DESSERT</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Price</th></tr>
-<tr><td>Gulab Jamun</td><td>$4.00</td></tr>
-<tr><td>Pineapple Kesari</td><td>$4.00</td></tr>
-<tr><td>Gajar Halwa</td><td>$4.00</td></tr>
-<tr><td>Shahi Tukda (Pre-Order Party Tray Only)</td><td>—</td></tr>
-<tr><td>Double Ka Meetha (Pre-Order Party Tray Only)</td><td>—</td></tr>
-</table>
-</div>
-
-
-<!-- DRINKS -->
-<div class="menu-block">
-<h3>DRINKS</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Price</th></tr>
-<tr><td>Pop - Coke / Diet Coke / Pepsi / Diet Pepsi / Sprite / Ginger Ale / Limca</td><td>$2.00</td></tr>
-</table>
-</div>
-
-
-<!-- SIDES -->
-<div class="menu-block">
-<h3>SIDES</h3>
-<table class="menu-table">
-<tr><th>Item</th><th>Price</th></tr>
-<tr><td>Dum Rice</td><td>$5.00</td></tr>
-<tr><td>Salan</td><td>$2.00</td></tr>
-<tr><td>Raita</td><td>$2.00</td></tr>
-</table>
-</div>
-
-</div>
-
-<a href="index.html" class="back-btn">← Back to Home</a>
-
-<footer id="contact">
-  <p><strong>Visit Us:</strong> 123 Biryani Street, Hyderabad Town</p>
-  <p><strong>Hours:</strong> Mon–Sun: 11 AM – 11 PM</p>
-  <p><strong>Contact:</strong> (123) 456-7890 | biryaniexpress@email.com</p>
-  <p>&copy; 2025 Biryani Express. Authentic Hyderabadi Cuisine.</p>
-</footer>
-
 
 </body>
 </html>
