@@ -46,6 +46,15 @@
       height: 130px;
     }
 
+    /* Halal Logo - Top Right */
+    .halal-top-corner {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 60px;
+      z-index: 9999;
+    }
+
     /* Hero Section */
     .hero {
       display: flex;
@@ -70,16 +79,9 @@
     .hero .sub {
       font-size: 1.2rem;
       font-weight: 400;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: var(--text);
       letter-spacing: 2px;
-    }
-
-    /* Halal logo */
-    .halal-logo {
-      width: 90px;
-      margin: 0.5rem 0 1.3rem;
-      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
     }
 
     /* Order Online Button */
@@ -183,14 +185,17 @@
         height: 110px;
       }
 
-      .halal-logo {
-        width: 70px;
+      .halal-top-corner {
+        width: 50px;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- ✅ Halal logo in top-right corner -->
+  <img class="halal-top-corner" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Halal_logo.svg" alt="Halal Certified" />
 
   <!-- Logo Header -->
   <header>
@@ -208,9 +213,6 @@
   <section class="hero" id="home">
     <h1>Nizam’s Biryani House</h1>
     <div class="sub">• Kitchen & Café</div>
-
-    <!-- ✅ Halal Logo -->
-    <img class="halal-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Halal_logo.svg" alt="Halal Certified Logo" />
 
     <!-- Order Online -->
     <a class="order-btn-hero"
