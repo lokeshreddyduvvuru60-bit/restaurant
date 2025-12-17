@@ -14,13 +14,11 @@
       --text: #f5f1e8;
       --accent: #d8b24a;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text);
@@ -28,43 +26,34 @@
       overflow-x: hidden;
     }
 
-    /* Navbar */
+    /* Navbar (simple, no dark bar) */
     header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(21, 54, 40, 0.6);
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       padding: 1rem 2rem;
-      flex-wrap: wrap;
-    }
-
-    .nav-left {
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 2rem;
-      flex: 1;
+      gap: 3rem;
+      z-index: 15;
+      background: transparent; /* No dark background */
     }
 
-    .nav-left img {
-      height: 70px;
+    header img {
+      height: 90px; /* larger logo */
     }
 
     nav {
       display: flex;
-      justify-content: center;
-      flex: 1;
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
 
     nav a {
       color: var(--text);
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 500;
       transition: 0.3s;
     }
@@ -73,49 +62,47 @@
       color: var(--accent);
     }
 
-    .order-btn-top {
-      background: var(--accent);
-      color: var(--bg);
-      padding: 0.6rem 1.6rem;
-      border-radius: 25px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 1rem;
-      white-space: nowrap;
-    }
-
-    /* Hero Heading */
+    /* Hero */
     .hero {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       text-align: center;
-      height: 100vh;
-      padding-top: 10rem; /* More spacing to prevent overlap */
-      z-index: 1;
+      padding-top: 7rem;
+      height: calc(100vh - 7rem);
       position: relative;
+      z-index: 1;
     }
 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 5.5rem;
-      line-height: 1;
+      font-size: 5rem;
       color: var(--accent);
-      margin-bottom: 0.5rem;
-      text-transform: uppercase;
+      margin-bottom: 0.4rem;
       letter-spacing: 2px;
     }
 
     .hero .sub {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 1.8rem;
       color: var(--text);
       letter-spacing: 2px;
     }
 
-    /* Background Video */
+    .order-btn-hero {
+      background: var(--accent);
+      color: var(--bg);
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-size: 1.15rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    /* Video Background */
     .video-wrapper {
       position: fixed;
       top: 0;
@@ -137,9 +124,7 @@
       transition: opacity 1s ease-in-out;
     }
 
-    .bg-video.active {
-      opacity: 1;
-    }
+    .bg-video.active { opacity: 1; }
 
     .overlay {
       position: fixed;
@@ -147,7 +132,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(180deg, rgba(21,54,40,0.7), rgba(21,54,40,0.85));
+      background: linear-gradient(180deg, rgba(21,54,40,0.6), rgba(21,54,40,0.8));
       z-index: -1;
     }
 
@@ -155,60 +140,40 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        gap: 0.5rem;
-      }
-
-      .nav-left {
-        flex-direction: column;
-        align-items: center;
         gap: 1rem;
       }
-
       nav {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.8rem;
       }
-
-      .order-btn-top {
-        margin-top: 0.5rem;
-      }
-
       .hero h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
-
       .hero .sub {
+        font-size: 1.1rem;
+      }
+      .order-btn-hero {
         font-size: 1rem;
+        padding: 0.7rem 1.8rem;
       }
     }
   </style>
 </head>
 
 <body>
+
   <!-- Navbar -->
   <header>
-    <div class="nav-left">
-      <img src="logo.png" alt="Nizams Logo" />
-      <nav>
-        <a href="#home">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="#catering">Catering</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
-    </div>
-    <a
-      class="order-btn-top"
-      href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Order Online
-    </a>
+    <img src="logo.png" alt="Nizams Biryani House Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
   </header>
 
-  <!-- Video Backgrounds -->
+  <!-- Background Videos -->
   <div class="video-wrapper">
     <video id="v1" class="bg-video" muted playsinline></video>
     <video id="v2" class="bg-video" muted playsinline></video>
@@ -218,10 +183,18 @@
   <!-- Hero -->
   <section class="hero" id="home">
     <h1>Nizam’s Biryani House</h1>
-    <div class="sub">Hyderabadi Cuisine • Kitchen & Café</div>
+    <div class="sub">• Kitchen  • Café</div>
+
+    <!-- ORDER ONLINE BUTTON BELOW HERO -->
+    <a class="order-btn-hero"
+       href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ"
+       target="_blank"
+       rel="noopener noreferrer">
+      Order Online
+    </a>
   </section>
 
-  <!-- Background Video Crossfade Script -->
+  <!-- Background Video Script -->
   <script>
     const videos = ["bg1.mp4", "bg.mp4", "hakka.mp4"];
     let idx = 0;
@@ -243,5 +216,6 @@
       fadeIn.play();
     }, 5000);
   </script>
+
 </body>
 </html>
