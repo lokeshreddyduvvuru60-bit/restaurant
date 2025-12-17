@@ -14,11 +14,13 @@
       --text: #f5f1e8;
       --accent: #d8b24a;
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text);
@@ -26,7 +28,7 @@
       overflow-x: hidden;
     }
 
-    /* Navbar (simple, no dark bar) */
+    /* Transparent Navbar */
     header {
       position: fixed;
       top: 0;
@@ -38,31 +40,14 @@
       align-items: center;
       gap: 3rem;
       z-index: 15;
-      background: transparent; /* No dark background */
+      background: transparent;
     }
 
     header img {
-      height: 90px; /* larger logo */
+      height: 90px;
     }
 
-    nav {
-      display: flex;
-      gap: 1.8rem;
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 1.05rem;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    /* Hero */
+    /* Hero Section */
     .hero {
       display: flex;
       align-items: center;
@@ -70,36 +55,67 @@
       flex-direction: column;
       text-align: center;
       padding-top: 7rem;
-      height: calc(100vh - 7rem);
+      height: auto;
+      min-height: 90vh;
       position: relative;
       z-index: 1;
     }
 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 5rem;
+      font-size: 4.5rem;
       color: var(--accent);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
       letter-spacing: 2px;
     }
 
     .hero .sub {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 400;
-      margin-bottom: 1.8rem;
+      margin-bottom: 2rem;
       color: var(--text);
       letter-spacing: 2px;
     }
 
+    /* Main Order Online Button */
     .order-btn-hero {
       background: var(--accent);
       color: var(--bg);
-      padding: 0.8rem 2rem;
+      padding: 0.75rem 2rem;
       border-radius: 30px;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: bold;
       text-decoration: none;
-      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      transition: 0.3s ease;
+    }
+
+    .order-btn-hero:hover {
+      background: #e8c75c;
+    }
+
+    /* Secondary Button Navigation */
+    .secondary-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .secondary-nav a {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 0.5rem 1.2rem;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .secondary-nav a:hover {
+      background: var(--accent);
+      color: var(--bg);
     }
 
     /* Video Background */
@@ -124,7 +140,9 @@
       transition: opacity 1s ease-in-out;
     }
 
-    .bg-video.active { opacity: 1; }
+    .bg-video.active {
+      opacity: 1;
+    }
 
     .overlay {
       position: fixed;
@@ -132,29 +150,29 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: linear-gradient(180deg, rgba(21,54,40,0.6), rgba(21,54,40,0.8));
+      background: linear-gradient(180deg, rgba(21,54,40,0.6), rgba(21,54,40,0.85));
       z-index: -1;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      nav {
-        flex-direction: column;
-        gap: 0.8rem;
-      }
       .hero h1 {
         font-size: 3rem;
       }
+
       .hero .sub {
-        font-size: 1.1rem;
-      }
-      .order-btn-hero {
         font-size: 1rem;
-        padding: 0.7rem 1.8rem;
+      }
+
+      .secondary-nav {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+      }
+
+      .secondary-nav a {
+        width: 80%;
+        text-align: center;
       }
     }
   </style>
@@ -162,15 +180,9 @@
 
 <body>
 
-  <!-- Navbar -->
+  <!-- Header -->
   <header>
     <img src="logo.png" alt="Nizams Biryani House Logo" />
-    <nav>
-      <a href="#home">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="#catering">Catering</a>
-      <a href="#contact">Contact Us</a>
-    </nav>
   </header>
 
   <!-- Background Videos -->
@@ -180,21 +192,28 @@
   </div>
   <div class="overlay"></div>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
     <h1>Nizam’s Biryani House</h1>
-    <div class="sub">• Kitchen  • Café</div>
+    <div class="sub">Hyderabadi Cuisine • Kitchen & Café</div>
 
-    <!-- ORDER ONLINE BUTTON BELOW HERO -->
+    <!-- Order Online -->
     <a class="order-btn-hero"
        href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ"
-       target="_blank"
-       rel="noopener noreferrer">
+       target="_blank">
       Order Online
     </a>
+
+    <!-- Navigation Buttons -->
+    <div class="secondary-nav">
+      <a href="#home">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact Us</a>
+    </div>
   </section>
 
-  <!-- Background Video Script -->
+  <!-- Background Crossfade Script -->
   <script>
     const videos = ["bg1.mp4", "bg.mp4", "hakka.mp4"];
     let idx = 0;
