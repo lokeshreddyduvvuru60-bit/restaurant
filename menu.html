@@ -63,8 +63,14 @@
       padding: 1rem;
     }
 
+    /* ✅ Responsive Table Fix */
+    .menu-content {
+      overflow-x: auto;
+    }
+
     .menu-table {
       width: 100%;
+      min-width: 700px; /* Forces scroll on small screens */
       border-collapse: collapse;
       margin-top: 0.5rem;
     }
@@ -104,6 +110,24 @@
       h1 {
         font-size: 2.2rem;
       }
+
+      .menu-content {
+        overflow-x: auto;
+      }
+
+      .menu-table {
+        min-width: 700px;
+      }
+
+      /* Optional scrollbar styling */
+      .menu-content::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .menu-content::-webkit-scrollbar-thumb {
+        background: #d8b24a;
+        border-radius: 3px;
+      }
     }
   </style>
 </head>
@@ -112,8 +136,7 @@
 
 <h1>Our Menu</h1>
 
-  <!-- Menu Sections -->
-  <div class="menu-wrapper">
+<div class="menu-wrapper">
 
     <!-- VEG STARTERS -->
     <div class="menu-block">
@@ -367,6 +390,7 @@
     </div>
 
   </div>
+
 
 <a href="index.html" class="back-btn">← Back to Home</a>
 
