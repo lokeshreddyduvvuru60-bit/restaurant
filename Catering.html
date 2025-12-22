@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catering – Nizams Biryani House</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg: #153628;
+      --text: #f5f1e8;
+      --accent: #d8b24a;
+      --light-bg: #fff6e6;
+      --dark-text: #153628;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .top-pitch {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .top-pitch h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .top-pitch p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .offer-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+    }
+
+    .offer-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .offer-text h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .offer-text h4 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .offer-image {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .offer-image img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .why-choose {
+      text-align: center;
+    }
+
+    .why-choose h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .feature {
+      flex: 1;
+      min-width: 220px;
+      max-width: 260px;
+    }
+
+    .feature h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta {
+      margin-top: 4rem;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta p {
+      margin-bottom: 1rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--bg);
+      padding: 0.75rem 1.8rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #e8c75c;
+    }
+
+    @media (max-width: 768px) {
+      .offer-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Top Pitch -->
+    <div class="top-pitch">
+      <h2>Planning a party or special gathering?</h2>
+      <p>
+        Let Nizams bring the taste of India to your table — fresh, flavourful, and perfectly suited for every celebration.
+      </p>
+    </div>
+
+    <!-- Two Column Offer -->
+    <div class="offer-section">
+      <div class="offer-text">
+        <h3>What We Offer</h3>
+        <h4>Made for Every Occasion</h4>
+        <p>
+          Whether it’s a birthday, office event, family function, or festive gathering, we offer catering that’s high on taste and easy to plan.
+          Specializing in party orders with flexible portions, authentic flavours, and customizable spice levels.
+        </p>
+        <h4>Fresh Handi Biryani, Made to Order</h4>
+        <p>
+          Every biryani order is prepared fresh in individual handis — never reused or bulk-mixed. Slow-cooked, aromatic, and truly special.
+        </p>
+      </div>
+      <div class="offer-image">
+        <img src="catering.png" alt="Catering Biryani Dish" />
+      </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="why-choose">
+      <h3>Why Choose Us</h3>
+      <div class="features">
+        <div class="feature">
+          <h4>Freshly Cooked, Always</h4>
+          <p>We cook every dish fresh — no shortcuts, no trays, just real flavour.</p>
+        </div>
+        <div class="feature">
+          <h4>Custom Handi Biryanis</h4>
+          <p>Each order comes sealed in its own handi, slow-cooked and authentic.</p>
+        </div>
+        <div class="feature">
+          <h4>Flexible Menus</h4>
+          <p>From veg to non-veg, we build menus that suit your budget and guest list.</p>
+        </div>
+        <div class="feature">
+          <h4>Competitive Pricing</h4>
+          <p>Delicious food, honest pricing. No surprises — just satisfaction.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h3>Let’s Cater Your Next Celebration</h3>
+      <p>Have something in mind? Reach out and let’s build the perfect menu together.</p>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+  </div>
+</body>
+</html>
