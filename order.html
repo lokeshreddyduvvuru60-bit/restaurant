@@ -12,7 +12,6 @@
     :root {
       --bg: #153628;
       --text: #d8b24a;
-      --accent: #e8c75c;
     }
 
     * {
@@ -26,7 +25,7 @@
       background: var(--bg);
       color: var(--text);
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 4rem 1rem 2rem;
     }
 
     header {
@@ -34,7 +33,6 @@
       top: 1rem;
       left: 1rem;
       z-index: 100;
-      background: var(--bg);
     }
 
     header img {
@@ -44,7 +42,8 @@
     h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 2.8rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      color: var(--text);
     }
 
     .platforms {
@@ -52,48 +51,47 @@
       justify-content: center;
       gap: 3rem;
       flex-wrap: wrap;
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     .platform {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
+      gap: 1rem;
       text-decoration: none;
       color: var(--text);
       transition: 0.3s ease;
     }
 
-    .platform svg {
-      width: 80px;
-      height: 80px;
-      fill: var(--text);
+    .platform img {
+      width: 90px;
+      height: auto;
+      filter: brightness(0) invert(1) sepia(1) saturate(500%) hue-rotate(10deg) brightness(1.2);
+      transition: transform 0.3s ease;
     }
 
-    .platform:hover svg {
-      opacity: 0.8;
+    .platform:hover img {
       transform: scale(1.1);
     }
 
     .note {
-      margin-top: 2rem;
-      font-style: italic;
       border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 2.5rem;
       padding-top: 1.5rem;
+      font-style: italic;
       font-size: 1rem;
     }
 
     @media (max-width: 600px) {
-      .platform svg {
-        width: 60px;
-        height: 60px;
+      .platform img {
+        width: 70px;
       }
+
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
     }
-
   </style>
 </head>
 
@@ -107,26 +105,19 @@
   <h1>Order Online</h1>
 
   <div class="platforms">
-
     <!-- Uber Eats -->
     <a class="platform"
-       href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ"
+       href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY"
        target="_blank" rel="noopener noreferrer">
-      <!-- Uber Eats SVG (clean & ready) -->
-      <svg viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg">
-        <path d="M249.18 114.65c-1.38-4.08-4.05-8.57-8.15-12.32C230.37 89.43 215 83 198.13 83h-6.05l3.68-13.13H136.8c-8.16 0-12.47 3.62-12.47 12.28v15.78c0 7.4 4.53 11.28 9.93 11.28h25.31v47.05h-42.6c-10.82 0-15.48 4.89-15.48 14.6v66.25c0 10.82 5.4 14.6 17.28 14.6h92.86c12.16 0 17.28-3.78 17.28-14.6V130.92c.01-1.41.03-2.82-.06-4.27z"/>
-      </svg>
+      <img src="uber-eats.svg" alt="Order on Uber Eats">
       Uber Eats
     </a>
 
     <!-- DoorDash -->
     <a class="platform"
-       href="https://www.doordash.com/"
+       href="https://www.doordash.com/store/38762513/"
        target="_blank" rel="noopener noreferrer">
-      <!-- DoorDash SVG (clean & ready) -->
-      <svg viewBox="0 0 256 262" xmlns="http://www.w3.org/2000/svg">
-        <path d="M128 0C57.31 0 0 57.31 0 128s57.31 128 128 128 128-57.31 128-128S198.69 0 128 0zm66.74 175.24h-33.95c-4.91 0-8.6 3.74-8.6 8.35v5.86c0 4.61 3.69 8.35 8.6 8.35h49.23c4.91 0 8.6-3.74 8.6-8.35v-5.86c0-4.61-3.69-8.35-8.6-8.35h-15.28zm0-58.94h-79.46c-4.91 0-8.6 3.74-8.6 8.35v5.86c0 4.61 3.69 8.35 8.6 8.35h79.46c4.91 0 8.6-3.74 8.6-8.35v-5.86c0-4.61-3.69-8.35-8.6-8.35z"/>
-      </svg>
+      <img src="doordash-logo.svg" alt="Order on DoorDash">
       DoorDash
     </a>
 
@@ -134,13 +125,9 @@
     <a class="platform"
        href="https://www.skipthedishes.com/"
        target="_blank" rel="noopener noreferrer">
-      <!-- SkipTheDishes SVG (clean & ready) -->
-      <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-        <path d="M250 0C111.93 0 0 111.93 0 250s111.93 250 250 250 250-111.93 250-250S388.07 0 250 0zm66.25 339.29H158.75v-38.46h157.5v38.46zm0-76.92H158.75v-38.46h157.5v38.46zm0-76.92H158.75V147h157.5v38.46z"/>
-      </svg>
+      <img src="SkipTheDishes_logo.svg" alt="Order on SkipTheDishes">
       SkipTheDishes
     </a>
-
   </div>
 
   <div class="note">
