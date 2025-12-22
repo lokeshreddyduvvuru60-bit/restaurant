@@ -49,19 +49,10 @@
     .platforms {
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
       gap: 4rem;
       flex-wrap: wrap;
       margin-bottom: 3.5rem;
-    }
-
-    .platform {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: var(--text);
-      gap: 0.8rem;
     }
 
     .platform img {
@@ -73,11 +64,6 @@
 
     .platform:hover img {
       transform: scale(1.08);
-    }
-
-    .platform span {
-      font-size: 1.1rem;
-      margin-top: 0.2rem;
     }
 
     .note {
@@ -97,10 +83,6 @@
       .platform img {
         height: 90px;
       }
-
-      .platform span {
-        font-size: 1rem;
-      }
     }
   </style>
 </head>
@@ -112,33 +94,22 @@
     <img src="logo.png" alt="Nizams Biryani House Logo">
   </header>
 
-  <!-- Page Title -->
-  <h1>Order Online</h1>
 
   <!-- Delivery Platforms -->
   <div class="platforms">
     <!-- Uber Eats -->
-    <a class="platform"
-       href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY"
-       target="_blank" rel="noopener noreferrer">
-      <img src="uber-eats.svg" alt="Order on Uber Eats">
-      <span>Uber Eats</span>
+    <a class="platform" href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY" target="_blank" rel="noopener noreferrer">
+      <img src="uber-eats.svg" alt="Uber Eats">
     </a>
 
     <!-- DoorDash -->
-    <a class="platform"
-       href="https://www.doordash.com/store/38762513/"
-       target="_blank" rel="noopener noreferrer">
-      <img src="doordash-logo.svg" alt="Order on DoorDash">
-      <span>DoorDash</span>
+    <a class="platform" href="https://www.doordash.com/store/38762513/" target="_blank" rel="noopener noreferrer">
+      <img src="doordash-logo.svg" alt="DoorDash">
     </a>
 
     <!-- SkipTheDishes -->
-    <a class="platform"
-       href="https://www.skipthedishes.com/"
-       target="_blank" rel="noopener noreferrer">
-      <img src="SkipTheDishes_logo.svg" alt="Order on SkipTheDishes">
-      <span>SkipTheDishes</span>
+    <a class="platform" href="https://www.skipthedishes.com/" target="_blank" rel="noopener noreferrer">
+      <img src="SkipTheDishes_logo.svg" alt="SkipTheDishes">
     </a>
   </div>
 
