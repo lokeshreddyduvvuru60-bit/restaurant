@@ -10,11 +10,9 @@
 
   <style>
     :root {
-      --bg: #153628;
-      --text: #f5f1e8;
-      --accent: #d8b24a;
-      --light-bg: #fff6e6;
-      --dark-text: #153628;
+      --bg: #153628;        /* Dark Green */
+      --text: #d8b24a;      /* Gold */
+      --accent: #e8c75c;    /* Light Gold */
     }
 
     * {
@@ -25,8 +23,8 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: var(--light-bg);
-      color: var(--dark-text);
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
@@ -48,12 +46,14 @@
     .top-pitch h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      color: var(--text);
     }
 
     .top-pitch p {
       font-size: 1.25rem;
       max-width: 800px;
       margin: 0 auto;
+      color: var(--text);
     }
 
     .offer-section {
@@ -72,11 +72,17 @@
     .offer-text h3 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: var(--text);
     }
 
     .offer-text h4 {
       font-size: 1.2rem;
       margin-top: 1rem;
+      color: var(--text);
+    }
+
+    .offer-text p {
+      color: var(--text);
     }
 
     .offer-image {
@@ -97,6 +103,7 @@
     .why-choose h3 {
       font-size: 2rem;
       margin-bottom: 2rem;
+      color: var(--text);
     }
 
     .features {
@@ -116,11 +123,16 @@
     .feature h4 {
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .feature p {
+      color: var(--text);
     }
 
     .cta {
       margin-top: 4rem;
-      background: var(--bg);
+      background: #0f261d;
       color: var(--text);
       padding: 2rem;
       border-radius: 12px;
@@ -148,7 +160,7 @@
     }
 
     .cta a:hover {
-      background: #e8c75c;
+      background: #f0da83;
     }
 
     @media (max-width: 768px) {
@@ -184,7 +196,7 @@
         </p>
       </div>
       <div class="offer-image">
-        <img src="catering.png" alt="Catering Biryani Dish" />
+        <img src="catering.jpg" alt="Catering Biryani Dish" />
       </div>
     </div>
 
