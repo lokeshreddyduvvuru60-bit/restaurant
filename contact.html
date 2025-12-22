@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Nizams Biryani House</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg: #153628;
+      --text: #f5f1e8;
+      --accent: #d8b24a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--accent);
+      font-family: 'Poppins', sans-serif;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      color: var(--accent);
+    }
+
+    .contact-info {
+      font-size: 1.1rem;
+      line-height: 2;
+      margin-bottom: 3rem;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .contact-info {
+        font-size: 1rem;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Logo -->
+  <header>
+    <img src="logo.png" alt="Nizams Biryani House Logo" />
+  </header>
+
+  <!-- Title -->
+  <h1>Contact Us</h1>
+
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <p><strong>Address:</strong> 30 Rivermont Road, Brampton, L6Y6G7</p>
+    <p><strong>Phone:</strong> 905-454-2454</p>
+    <p><strong>Email:</strong> Nizambiryanihouse@gmail.com</p>
+  </div>
+
+  <!-- Google Maps Embed -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.649992410998!2d-79.7592470841817!3d43.67139367912056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b14805b72fd85%3A0x1e3e8bfc4f2f712f!2s30%20Rivermont%20Rd%2C%20Brampton%2C%20ON%20L6Y%206G7%2C%20Canada!5e0!3m2!1sen!2sca!4v1703288888888"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+</body>
+</html>
