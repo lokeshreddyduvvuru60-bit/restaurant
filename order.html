@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Online – Nizams Biryani House</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg: #153628;        /* Dark Green */
+      --text: #d8b24a;      /* Gold */
+      --accent: #e8c75c;    /* Light Gold */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .platforms a {
+      transition: transform 0.3s ease;
+    }
+
+    .platforms a:hover {
+      transform: scale(1.05);
+    }
+
+    .platforms img {
+      height: 80px;
+      width: auto;
+      filter: brightness(1.2);
+    }
+
+    .note {
+      font-size: 1.1rem;
+      font-style: italic;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        height: 80px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .platforms img {
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top-left logo header -->
+  <header>
+    <img src="logo.png" alt="Nizams Biryani House Logo" />
+  </header>
+
+  <div class="container">
+    <h1>Order Online</h1>
+
+    <!-- ✅ Platforms -->
+    <div class="platforms">
+      <!-- Uber Eats -->
+      <a href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_Eats_2020_logo.svg" alt="Order on Uber Eats" />
+      </a>
+
+      <!-- DoorDash -->
+      <a href="https://www.doordash.com/store/38762513/" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/DoorDash_Logo.svg" alt="Order on DoorDash" />
+      </a>
+
+      <!-- SkipTheDishes -->
+      <a href="https://www.skipthedishes.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://seeklogo.com/images/S/skip-the-dishes-logo-5B7D57A8BD-seeklogo.com.png" alt="Order on SkipTheDishes" />
+      </a>
+    </div>
+
+    <!-- ✅ Pickup note -->
+    <div class="note">
+      Please contact us for pick-up orders.
+    </div>
+  </div>
+
+</body>
+</html>
