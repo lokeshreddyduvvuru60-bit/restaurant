@@ -21,10 +21,6 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text);
@@ -32,6 +28,7 @@
       overflow-x: hidden;
     }
 
+    /* Transparent Header */
     header {
       position: fixed;
       top: 0;
@@ -49,6 +46,7 @@
       height: 130px;
     }
 
+    /* Halal Logo - Top Right */
     .halal-top-corner {
       position: fixed;
       top: 10px;
@@ -57,6 +55,7 @@
       z-index: 9999;
     }
 
+    /* Hero Section */
     .hero {
       display: flex;
       align-items: center;
@@ -85,6 +84,7 @@
       letter-spacing: 2px;
     }
 
+    /* Order Online Button */
     .order-btn-hero {
       background: var(--accent);
       color: var(--bg);
@@ -101,6 +101,7 @@
       background: #e8c75c;
     }
 
+    /* Button Groups */
     .button-row {
       display: flex;
       justify-content: center;
@@ -128,6 +129,7 @@
       color: var(--bg);
     }
 
+    /* Background Video */
     .video-wrapper {
       position: fixed;
       top: 0;
@@ -163,6 +165,7 @@
       z-index: -1;
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
       .hero h1 {
         font-size: 3rem;
@@ -191,101 +194,43 @@
 
 <body>
 
-  <!-- ✅ Halal logo -->
+  <!-- ✅ Halal logo in top-right corner -->
   <img class="halal-top-corner" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Halal_logo.svg" alt="Halal Certified" />
 
-  <!-- ✅ Logo Header -->
+  <!-- Logo Header -->
   <header>
     <img src="logo.png" alt="Nizams Biryani House Logo" />
   </header>
 
-  <!-- ✅ Background Video -->
+  <!-- Background Videos -->
   <div class="video-wrapper">
     <video id="v1" class="bg-video" muted playsinline></video>
     <video id="v2" class="bg-video" muted playsinline></video>
   </div>
   <div class="overlay"></div>
 
-  <!-- ✅ Hero Section -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
     <h1>Nizams Biryani House</h1>
     <div class="sub">• Kitchen & Café</div>
 
+    <!-- Order Online -->
     <a class="order-btn-hero"
        href="https://www.ubereats.com/ca/store/idli-street/8e_YBgI9SXmu3u33qGf8XQ"
        target="_blank" rel="noopener noreferrer">
       Order Online
     </a>
 
-    <!-- ✅ Menu, Catering, Contact Us Buttons -->
-    <div class="button-row">
-      <a href="menu.html">Menu</a>
-      <a href="#catering">Catering</a>
-      <a href="#contact">Contact Us</a>
-    </div>
-  </section>
+    <!-- 2x2 Buttons -->
+  <!-- 3 Buttons in One Row -->
+<div class="button-row">
+  <a href="menu.html">Menu</a>
+  <a href="#catering">Catering</a>
+  <a href="#contact">Contact Us</a>
+</div>
 
-  <!-- ✅ Catering Section -->
-  <section id="catering" style="background: #fff6e6; color: #153628; font-family: 'Poppins', sans-serif; padding: 4rem 2rem;">
-    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
-      <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 1rem;">Planning a party or special gathering?</h2>
-      <p style="font-size: 1.25rem; line-height: 1.8;">
-        Let Nizams bring the taste of India to your table — fresh, flavourful, and perfectly suited for every celebration.
-      </p>
-    </div>
 
-    <div style="display: flex; flex-wrap: wrap; margin-top: 4rem; max-width: 1100px; margin-left: auto; margin-right: auto; gap: 2rem;">
-      <div style="flex: 1; min-width: 300px;">
-        <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem;">What We Offer</h3>
-        <h4 style="margin-top: 1rem;">Made for Every Occasion</h4>
-        <p style="margin-bottom: 1.5rem;">
-          Whether it’s a birthday, office event, family function, or festive gathering, we offer catering that’s high on taste and easy to plan.
-          Specializing in party orders with flexible portions, authentic flavours, and customizable spice levels.
-        </p>
-        <h4>Fresh Handi Biryani, Made to Order</h4>
-        <p>
-          Every biryani order is prepared fresh in individual handis — never reused or bulk-mixed. Slow-cooked, aromatic, and truly special.
-        </p>
-      </div>
-      <div style="flex: 1; min-width: 300px;">
-        <img src="catering.png" alt="Catering Biryani Dish" style="width: 100%; border-radius: 12px; object-fit: cover;"/>
-      </div>
-    </div>
-
-    <div style="margin-top: 4rem; text-align: center;">
-      <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 2rem;">Why Choose Us</h3>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-        <div style="flex: 1; min-width: 200px;">
-          <img src="icon1.png" alt="Fresh Icon" style="width: 50px; margin-bottom: 1rem;"/>
-          <h4>Freshly Cooked, Always</h4>
-          <p>Prepared fresh — no shortcuts or pre-packed trays. Quality is our top priority.</p>
-        </div>
-        <div style="flex: 1; min-width: 200px;">
-          <img src="icon2.png" alt="Handi Icon" style="width: 50px; margin-bottom: 1rem;"/>
-          <h4>Custom Handi Biryanis</h4>
-          <p>Made in sealed handis per order, tailored to your spice and portion needs.</p>
-        </div>
-        <div style="flex: 1; min-width: 200px;">
-          <img src="icon3.png" alt="Menu Icon" style="width: 50px; margin-bottom: 1rem;"/>
-          <h4>Flexible Menus</h4>
-          <p>Veg or non-veg? We’ll create a menu that matches your guests and budget.</p>
-        </div>
-        <div style="flex: 1; min-width: 200px;">
-          <img src="icon4.png" alt="Pricing Icon" style="width: 50px; margin-bottom: 1rem;"/>
-          <h4>Competitive Pricing</h4>
-          <p>Great food. No hidden costs. Ideal for any occasion.</p>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top: 4rem; background: #153628; color: #fff6e6; padding: 2rem; border-radius: 12px; text-align: center;">
-      <h3 style="font-size: 1.75rem;">Let’s Cater Your Next Celebration</h3>
-      <p>Have something in mind? Reach out and let’s build the perfect menu together.</p>
-      <a href="#contact" class="order-btn-hero" style="margin-top: 1rem; display: inline-block;">Contact Us</a>
-    </div>
-  </section>
-
-  <!-- ✅ Background Crossfade Script -->
+  <!-- Background Crossfade Script -->
   <script>
     const videos = ["bg1.mp4", "bg.mp4", "hakka.mp4"];
     let idx = 0;
@@ -310,3 +255,6 @@
 
 </body>
 </html>
+
+
+
