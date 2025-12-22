@@ -25,7 +25,7 @@
       background: var(--bg);
       color: var(--text);
       text-align: center;
-      padding: 4rem 1rem 2rem;
+      padding: 5rem 1rem 2rem;
     }
 
     header {
@@ -36,43 +36,48 @@
     }
 
     header img {
-      height: 90px;
+      height: 100px;
     }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem;
-      margin-bottom: 3rem;
+      font-size: 3.2rem;
+      margin-bottom: 4rem;
       color: var(--text);
     }
 
     .platforms {
       display: flex;
       justify-content: center;
-      gap: 3rem;
+      align-items: flex-end;
+      gap: 4rem;
       flex-wrap: wrap;
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
 
     .platform {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
       text-decoration: none;
       color: var(--text);
-      transition: 0.3s ease;
+      gap: 0.8rem;
     }
 
     .platform img {
-      width: 90px;
-      height: auto;
-      filter: brightness(0) invert(1) sepia(1) saturate(500%) hue-rotate(10deg) brightness(1.2);
+      height: 120px;
+      max-width: 160px;
+      object-fit: contain;
       transition: transform 0.3s ease;
     }
 
     .platform:hover img {
-      transform: scale(1.1);
+      transform: scale(1.08);
+    }
+
+    .platform span {
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
     }
 
     .note {
@@ -80,16 +85,21 @@
       margin-top: 2.5rem;
       padding-top: 1.5rem;
       font-style: italic;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      color: var(--text);
     }
 
     @media (max-width: 600px) {
-      .platform img {
-        width: 70px;
+      h1 {
+        font-size: 2.3rem;
       }
 
-      h1 {
-        font-size: 2.2rem;
+      .platform img {
+        height: 90px;
+      }
+
+      .platform span {
+        font-size: 1rem;
       }
     }
   </style>
@@ -97,20 +107,22 @@
 
 <body>
 
-  <!-- Logo on top-left -->
+  <!-- Logo Top Left -->
   <header>
     <img src="logo.png" alt="Nizams Biryani House Logo">
   </header>
 
+  <!-- Page Title -->
   <h1>Order Online</h1>
 
+  <!-- Delivery Platforms -->
   <div class="platforms">
     <!-- Uber Eats -->
     <a class="platform"
        href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY"
        target="_blank" rel="noopener noreferrer">
       <img src="uber-eats.svg" alt="Order on Uber Eats">
-      Uber Eats
+      <span>Uber Eats</span>
     </a>
 
     <!-- DoorDash -->
@@ -118,7 +130,7 @@
        href="https://www.doordash.com/store/38762513/"
        target="_blank" rel="noopener noreferrer">
       <img src="doordash-logo.svg" alt="Order on DoorDash">
-      DoorDash
+      <span>DoorDash</span>
     </a>
 
     <!-- SkipTheDishes -->
@@ -126,12 +138,13 @@
        href="https://www.skipthedishes.com/"
        target="_blank" rel="noopener noreferrer">
       <img src="SkipTheDishes_logo.svg" alt="Order on SkipTheDishes">
-      SkipTheDishes
+      <span>SkipTheDishes</span>
     </a>
   </div>
 
+  <!-- Footer Note -->
   <div class="note">
-    Please contact us for pick‑up orders.
+    Please contact us for pick-up orders.
   </div>
 
 </body>
