@@ -24,12 +24,17 @@
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
       color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 5rem 1rem 2rem;
+      padding: 2rem 1rem;
     }
 
     header {
-      position: fixed;
+      position: absolute;
       top: 1rem;
       left: 1rem;
       z-index: 100;
@@ -42,22 +47,21 @@
     h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 3.2rem;
-      margin-bottom: 4rem;
-      color: var(--text);
+      margin-bottom: 3rem;
     }
 
     .platforms {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 4rem;
+      gap: 5rem;
       flex-wrap: wrap;
       margin-bottom: 3.5rem;
     }
 
     .platform img {
-      height: 120px;
-      max-width: 160px;
+      height: 156px; /* Increased from 120px */
+      max-width: 220px;
       object-fit: contain;
       transition: transform 0.3s ease;
     }
@@ -68,20 +72,25 @@
 
     .note {
       border-top: 1px solid rgba(255,255,255,0.2);
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
       font-style: italic;
       font-size: 1.05rem;
       color: var(--text);
+      width: 100%;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
       }
 
       .platform img {
-        height: 90px;
+        height: 110px;
+      }
+
+      .platforms {
+        gap: 2rem;
       }
     }
   </style>
@@ -89,13 +98,15 @@
 
 <body>
 
-  <!-- Logo Top Left -->
+  <!-- Nizams Logo -->
   <header>
     <img src="logo.png" alt="Nizams Biryani House Logo">
   </header>
 
+  <!-- Title -->
+  <h1>Order Online</h1>
 
-  <!-- Delivery Platforms -->
+  <!-- Platforms -->
   <div class="platforms">
     <!-- Uber Eats -->
     <a class="platform" href="https://www.ubereats.com/store/nizams-biryani-house-30-rivermont-rd-malaspina-close/uDvrgUOlQEOaC0x9KJpnfQ?diningMode=DELIVERY" target="_blank" rel="noopener noreferrer">
